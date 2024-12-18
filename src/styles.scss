@@ -1,0 +1,88 @@
+:root {
+  --background: #060b10;
+  --green: #45d8b4;
+  --dark-text: rgba(12, 42, 42);
+  --text: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--background);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column; /* Agregado para centrar el contenido en columna */
+
+  h1 {
+    margin-bottom: 30px;
+    font-size: 2rem; /* Ajuste de tamaño de fuente */
+    color: var(--green); /* Título en color verde */
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #1c2a34; /* Fondo con color más oscuro para resaltar el formulario */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+  }
+
+  hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #444;
+  }
+
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #1a232b; /* Fondo oscuro para los campos de formulario */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+
+  .mdc-button {
+    width: 100%;
+    background-color: var(--green);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px; /* Botón con bordes redondeados */
+    padding: 10px;
+  }
+
+  .small-text {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    color: #ccc; /* Color de texto más suave para los links */
+
+    &.providers {
+      margin-bottom: 30px;
+    }
+
+    &.log-in-redirect {
+      margin-top: 30px;
+
+      a {
+        color: var(--green);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
